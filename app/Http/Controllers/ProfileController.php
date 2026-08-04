@@ -39,7 +39,7 @@ class ProfileController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request): RedirectResponse
+    public function store(StoreProfileRequest $request): RedirectResponse
     {
         $request->user()->profiles()->create($request->validated());
 
@@ -70,7 +70,7 @@ class ProfileController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Profile $profile): RedirectResponse
+    public function update(UpdateProfileRequest $request, Profile $profile): RedirectResponse
     {
         $this->authorize('update', $profile);
 
