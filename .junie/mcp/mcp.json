@@ -1,0 +1,11 @@
+{
+    "mcpServers": {
+        "laravel-boost": {
+            "command": "/Users/cedrick/.config/herd-lite/bin/php",
+            "args": [
+                "/Users/cedrick/Documents/Projects/people-dynamics-exam/artisan",
+                "boost:mcp"
+            ]
+        }
+    }
+}
